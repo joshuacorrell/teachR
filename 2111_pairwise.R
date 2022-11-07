@@ -65,7 +65,7 @@ my.pairwise <- function (x, g, p.adjust.method = p.adjust.methods, pool.sd = !pa
     DF <- pairwise.table.t(compare.levels.df, levels(g), p.adjust.method)           
   ans <- list(method = METHOD, data.name = DNAME, p.value = PVAL, 
               p.adjust.method = p.adjust.method, t.value = TVAL, dfs = DF)
-  class(ans) <- "pairwise.htest"
+  #class(ans) <- "pairwise.htest"
   ans
 }
 pairwise.table.t <- function (compare.levels.t, level.names, p.adjust.method) 
